@@ -1,0 +1,263 @@
+About · HTML
+Copy
+
+<!DOCTYPE html>
+<!-- about.html - bbno$ Fan Site | About | Author: Isaiah -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | bbno$ Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>/* style.css - bbno$ Fan Site | Author: Isaiah */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #b8ff57;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff57c8;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  color: #b8ff57;
+}
+
+/* Page header */
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #b8ff57;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 1.1em;
+}
+
+/* Buttons */
+a.btn {
+  display: inline-block;
+  background-color: #b8ff57;
+  color: #111111;
+  padding: 10px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+a.btn:hover {
+  background-color: #ff57c8;
+  color: #ffffff;
+}
+
+/* Main content area */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #b8ff57;
+  border-bottom: 2px solid #b8ff57;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: #ff57c8;
+  margin-bottom: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: #b8ff57;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery figure {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 10px;
+  width: 280px;
+  border-radius: 6px;
+}
+
+.gallery figure .photo {
+  width: 100%;
+  height: 160px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.gallery figcaption {
+  font-size: 0.85em;
+  color: #aaaaaa;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+  color: #666666;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #b8ff57;
+  margin: 0 10px;
+  text-decoration: none;
+}</style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">bbno$</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+      <a href="tour.html">Tour</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>About bbno$</h1>
+    <p>The story behind the dollar sign</p>
+  </header>
+
+  <main>
+
+    <!-- Quick facts using a definition list — MDN Element #1 -->
+    <!-- <dl>, <dt>, <dd> are a definition list. Not covered in lecture.
+         Used here to display key facts about the artist in a structured way.
+         Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl -->
+    <h2>Quick Facts</h2>
+    <dl>
+      <dt style="color:#b8ff57; font-weight:bold;">Real Name</dt>
+      <dd style="margin: 0 0 10px 20px;">Alexander Gumuchian</dd>
+
+      <dt style="color:#b8ff57; font-weight:bold;">From</dt>
+      <dd style="margin: 0 0 10px 20px;">Vancouver, BC, Canada</dd>
+
+      <dt style="color:#b8ff57; font-weight:bold;">Born</dt>
+      <dd style="margin: 0 0 10px 20px;">1998</dd>
+
+      <dt style="color:#b8ff57; font-weight:bold;">Genre</dt>
+      <dd style="margin: 0 0 10px 20px;">Pop Rap, Hyperpop, Bedroom Pop</dd>
+
+      <dt style="color:#b8ff57; font-weight:bold;">Label</dt>
+      <dd style="margin: 0 0 10px 20px;">Independent</dd>
+
+      <dt style="color:#b8ff57; font-weight:bold;">Active</dt>
+      <dd style="margin: 0 0 10px 20px;">2017 – Present</dd>
+    </dl>
+
+    <h2>Bio</h2>
+    <p>Alexander Gumuchian — known as bbno$ (short for "baby no money") — grew up in Vancouver
+    and got into music through self-teaching and experimenting with production software.
+    He briefly attended UBC before dropping out to go all-in on music.</p>
+
+    <br>
+
+    <p>He started posting on SoundCloud in 2017 and built a following through his weird, catchy,
+    self-deprecating style. Everything exploded in 2019 when <em>Lalala</em> featuring Y2K
+    went viral on TikTok.</p>
+
+    <br>
+
+    <!-- Blockquote for a quote from the artist -->
+    <blockquote style="border-left: 4px solid #ff57c8; padding: 10px 16px; background-color: #1a1a1a; font-style: italic;">
+      "I just wanted to make the weirdest, funniest, most fun music I could."
+    </blockquote>
+
+    <br>
+
+    <p>He has stayed fully independent his whole career — no major label deals.
+    He handles his own releases and tour, which is a big reason his fans trust him so much.</p>
+
+  </main>
+
+  <footer>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+    <a href="tour.html">Tour</a>
+    <a href="gallery.html">Gallery</a>
+    <p>Fan site for educational purposes only. &copy; 2025</p>
+  </footer>
+
+</body>
+</html>

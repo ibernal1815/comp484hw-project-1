@@ -1,0 +1,299 @@
+Gallery · HTML
+Copy
+
+<!DOCTYPE html>
+<!-- gallery.html - bbno$ Fan Site | Gallery | Author: Isaiah -->
+<!--
+  MDN Elements used on this page:
+  - <figure> and <figcaption>    (MDN Element #3)
+  - <details> and <summary>      (already in use)
+
+  MDN Attribute used on this page:
+  - loading="lazy" on <img>      (MDN Attribute #3)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | bbno$ Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>/* style.css - bbno$ Fan Site | Author: Isaiah */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #b8ff57;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff57c8;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  color: #b8ff57;
+}
+
+/* Page header */
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #b8ff57;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 1.1em;
+}
+
+/* Buttons */
+a.btn {
+  display: inline-block;
+  background-color: #b8ff57;
+  color: #111111;
+  padding: 10px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+a.btn:hover {
+  background-color: #ff57c8;
+  color: #ffffff;
+}
+
+/* Main content area */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #b8ff57;
+  border-bottom: 2px solid #b8ff57;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: #ff57c8;
+  margin-bottom: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: #b8ff57;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery figure {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 10px;
+  width: 280px;
+  border-radius: 6px;
+}
+
+.gallery figure .photo {
+  width: 100%;
+  height: 160px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.gallery figcaption {
+  font-size: 0.85em;
+  color: #aaaaaa;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+  color: #666666;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #b8ff57;
+  margin: 0 10px;
+  text-decoration: none;
+}</style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">bbno$</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+      <a href="tour.html">Tour</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Gallery</h1>
+    <p>Photos and live moments</p>
+  </header>
+
+  <main>
+    <h2>Photos</h2>
+
+    <div class="gallery">
+
+      <!--
+        MDN Element #3: <figure> and <figcaption>
+        <figure> marks self-contained media. <figcaption> captions it.
+        Not covered in lecture.
+        Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+      -->
+
+      <figure>
+        <!--
+          MDN Attribute #3: loading="lazy"
+          Defers image loading until user scrolls to it. Improves performance.
+          Real use: <img src="img/show.jpg" alt="bbno$ live" loading="lazy">
+          Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#loading
+        -->
+        <div class="photo">🎤</div>
+        <figcaption>Live show — Los Angeles, 2022</figcaption>
+        <!--
+          <details> and <summary>: native toggle, no JS needed.
+          Not covered in lecture.
+          Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+        -->
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>Bag or Die Tour · The Fonda Theatre · Fan photo</p>
+        </details>
+      </figure>
+
+      <figure>
+        <div class="photo">🎛️</div>
+        <figcaption>In the studio — Vancouver, 2019</figcaption>
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>bb steps recording session · Press photo</p>
+        </details>
+      </figure>
+
+      <figure>
+        <div class="photo">📸</div>
+        <figcaption>Press photo — recess era, 2021</figcaption>
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>Official promotional photo · recess album campaign</p>
+        </details>
+      </figure>
+
+      <figure>
+        <div class="photo">🤝</div>
+        <figcaption>bbno$ and Yung Gravy backstage, 2022</figcaption>
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>Joint headline tour · Backstage candid</p>
+        </details>
+      </figure>
+
+      <figure>
+        <div class="photo">🎶</div>
+        <figcaption>Sold-out Vancouver show, 2023</figcaption>
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>Homecoming show · Fan photo</p>
+        </details>
+      </figure>
+
+      <figure>
+        <div class="photo">👕</div>
+        <figcaption>Merch table — recess tour, 2021</figcaption>
+        <details style="padding: 8px; font-size: 0.8em; color: #aaaaaa;">
+          <summary style="cursor: pointer; color: #b8ff57;">More info</summary>
+          <p>Tour merch · recess era collection</p>
+        </details>
+      </figure>
+
+    </div>
+  </main>
+
+  <footer>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+    <a href="tour.html">Tour</a>
+    <a href="gallery.html">Gallery</a>
+    <p>Fan site for educational purposes only. &copy; 2025</p>
+  </footer>
+
+</body>
+</html>

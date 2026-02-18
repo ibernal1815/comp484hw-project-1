@@ -1,0 +1,234 @@
+Index · HTML
+Copy
+
+<!DOCTYPE html>
+<!-- index.html - bbno$ Fan Site | Home Page | Author: Isaiah -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bbno$ Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>/* style.css - bbno$ Fan Site | Author: Isaiah */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #b8ff57;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff57c8;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  color: #b8ff57;
+}
+
+/* Page header */
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #b8ff57;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 1.1em;
+}
+
+/* Buttons */
+a.btn {
+  display: inline-block;
+  background-color: #b8ff57;
+  color: #111111;
+  padding: 10px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+a.btn:hover {
+  background-color: #ff57c8;
+  color: #ffffff;
+}
+
+/* Main content area */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #b8ff57;
+  border-bottom: 2px solid #b8ff57;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: #ff57c8;
+  margin-bottom: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: #b8ff57;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery figure {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 10px;
+  width: 280px;
+  border-radius: 6px;
+}
+
+.gallery figure .photo {
+  width: 100%;
+  height: 160px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.gallery figcaption {
+  font-size: 0.85em;
+  color: #aaaaaa;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+  color: #666666;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #b8ff57;
+  margin: 0 10px;
+  text-decoration: none;
+}</style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">bbno$</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+      <a href="tour.html">Tour</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>bbno$</h1>
+    <p>Canadian rapper. Independent. Built different.</p>
+    <a href="discography.html" class="btn">Check the Discography</a>
+  </header>
+
+  <main>
+    <h2>Why bbno$?</h2>
+    <div class="card-row">
+
+      <div class="card">
+        <h3>🎵 The Sound</h3>
+        <p>Bubbly beats, funny bars, and zero genre loyalty. Pop, rap, hyperpop — he does it all.</p>
+      </div>
+
+      <div class="card">
+        <h3>🤝 The Collabs</h3>
+        <p>Yung Gravy, Rich Brian, Y2K and more. He always brings out the best in his features.</p>
+      </div>
+
+      <div class="card">
+        <h3>📈 The Rise</h3>
+        <p>From broke SoundCloud rapper to billions of streams. All independent, no major label.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+    <a href="tour.html">Tour</a>
+    <a href="gallery.html">Gallery</a>
+    <p>Fan site for educational purposes only. &copy; 2025</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+Tour · HTML
+Copy
+
+<!DOCTYPE html>
+<!-- tour.html - bbno$ Fan Site | Tour Dates | Author: Isaiah -->
+<!--
+  MDN Elements/Attributes used on this page:
+  - <table> with <caption>, <thead>, <tbody>  (MDN Element #2)
+  - scope="col" on <th>                       (MDN Attribute #1)
+  - caption-side CSS property                 (MDN Attribute #2)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Dates | bbno$ Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* style.css - bbno$ Fan Site | Author: Isaiah */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #b8ff57;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff57c8;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  color: #b8ff57;
+}
+
+/* Page header */
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #b8ff57;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 1.1em;
+}
+
+/* Buttons */
+a.btn {
+  display: inline-block;
+  background-color: #b8ff57;
+  color: #111111;
+  padding: 10px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+a.btn:hover {
+  background-color: #ff57c8;
+  color: #ffffff;
+}
+
+/* Main content area */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #b8ff57;
+  border-bottom: 2px solid #b8ff57;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: #ff57c8;
+  margin-bottom: 8px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: #b8ff57;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery figure {
+  background-color: #222222;
+  border: 1px solid #333333;
+  padding: 10px;
+  width: 280px;
+  border-radius: 6px;
+}
+
+.gallery figure .photo {
+  width: 100%;
+  height: 160px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.gallery figcaption {
+  font-size: 0.85em;
+  color: #aaaaaa;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 25px;
+  color: #666666;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #b8ff57;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+    /* caption-side: positions the table caption above the table
+       MDN Attribute #2
+       Source: https://developer.mozilla.org/en-US/docs/Web/CSS/caption-side */
+    caption {
+      caption-side: top;
+      text-align: left;
+      padding-bottom: 8px;
+      color: #aaaaaa;
+      font-size: 0.9em;
+    }
+
+    .on-sale  { color: #b8ff57; font-weight: bold; }
+    .sold-out { color: #ff5757; font-weight: bold; }
+    .upcoming { color: #ffaa00; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">bbno$</span>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+      <a href="tour.html">Tour</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Tour Dates</h1>
+    <p>2025 World Tour</p>
+  </header>
+
+  <main>
+    <h2>Upcoming Shows</h2>
+
+    <!--
+      MDN Element #2: <table> with semantic structure
+      Using <caption>, <thead>, <tbody>, and scope="col" on <th>.
+      Not all of this was covered in lecture.
+      Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+    -->
+    <table>
+
+      <caption>bbno$ 2025 World Tour — All dates subject to change</caption>
+
+      <thead>
+        <tr>
+          <!-- scope="col" tells screen readers this header applies to the column
+               MDN Attribute #1
+               Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th -->
+          <th scope="col">Date</th>
+          <th scope="col">City</th>
+          <th scope="col">Venue</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr><td>Mar 14</td><td>Vancouver, BC</td><td>Commodore Ballroom</td><td><span class="sold-out">Sold Out</span></td></tr>
+        <tr><td>Mar 17</td><td>Seattle, WA</td><td>Showbox SoDo</td><td><span class="sold-out">Sold Out</span></td></tr>
+        <tr><td>Mar 20</td><td>Los Angeles, CA</td><td>The Fonda Theatre</td><td><span class="on-sale">On Sale</span></td></tr>
+        <tr><td>Mar 23</td><td>San Francisco, CA</td><td>The Fillmore</td><td><span class="on-sale">On Sale</span></td></tr>
+        <tr><td>Mar 27</td><td>Chicago, IL</td><td>Thalia Hall</td><td><span class="on-sale">On Sale</span></td></tr>
+        <tr><td>Mar 30</td><td>New York, NY</td><td>Brooklyn Steel</td><td><span class="upcoming">Upcoming</span></td></tr>
+        <tr><td>Apr 3</td><td>Toronto, ON</td><td>History</td><td><span class="upcoming">Upcoming</span></td></tr>
+        <tr><td>Apr 7</td><td>London, UK</td><td>KOKO</td><td><span class="upcoming">Upcoming</span></td></tr>
+      </tbody>
+
+    </table>
+  </main>
+
+  <footer>
+    <a href="discography.html">Discography</a>
+    <a href="about.html">About</a>
+    <a href="tour.html">Tour</a>
+    <a href="gallery.html">Gallery</a>
+    <p>Fan site for educational purposes only. &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
