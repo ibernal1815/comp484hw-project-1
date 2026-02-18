@@ -45,13 +45,8 @@ As part of the assignment I had to find 3 HTML elements and 3 attributes from MD
 
 3. `loading="lazy"` on `<img>` - Used on Gallery page images to defer loading until the user scrolls near them, which improves page performance. Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#loading
 
-## Notes
-
-- Images in the gallery are placeholders. To add real photos, save them to an img/ folder and replace the placeholder divs with img tags as shown in the comments inside gallery.html.
-- The CSS is also embedded in a style tag inside each HTML file for preview purposes. The external style.css link is what should be used when running locally.
-
 ## Course Info
 
-Course: COMP 484/L - Web Engineering I 
-School: California State University, Northridge  
-Semester: Spring 2026
+- Course: COMP 484/L - Web Engineering I 
+- School: California State University, Northridge  
+- Semester: Spring 2026
