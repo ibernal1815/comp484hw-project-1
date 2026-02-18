@@ -15,16 +15,6 @@ The site has 4 pages and 1 shared stylesheet:
 - gallery.html - Photo gallery with captions and expandable info
 - style.css - Shared stylesheet used across all pages
 
-## How to View
-
-Clone or download the repo, then open index.html in Chrome. No setup required.
-
-```
-git clone https://github.com/yourusername/bbno-fan-site.git
-cd bbno-fan-site
-open index.html
-```
-
 ## MDN Elements and Attributes
 
 As part of the assignment I had to find 3 HTML elements and 3 attributes from MDN that were not covered in lecture and use them in a practical way.
