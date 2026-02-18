@@ -1,6 +1,6 @@
 # bbno$ Fan Site
 
-A personal fan site built for my Web Development course (CIT 484) at CSUN. The site is about the Canadian rapper bbno$ and covers his discography, biography, tour dates, and a photo gallery.
+A personal fan site built for my Web Development course (COMP 484) at CSUN. The site is about the Canadian rapper bbno$ and covers his discography, biography, tour dates, and a photo gallery.
 
 ## About the Project
 
