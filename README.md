@@ -1,3 +1,6 @@
+# GitHub Pages Link
+https://ibernal1815.github.io/comp484hw-project-1/
+
 # bbno$ Fan Site
 
 A personal fan site built for my Web Development course (COMP 484) at CSUN. The site is about the Canadian rapper bbno$ and covers his discography, biography, tour dates, and a photo gallery.
